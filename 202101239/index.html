@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>原创动力</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!-- Custom Theme files -->
+<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----font-Awesome----->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<!----//webfonts---->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+<body>
+		<!----start-container---->
+			<!----start-header---->
+		<div id="home" class="header scroll">
+			<div class="container">
+				<!---- start-logo---->
+				<div class="logo">
+					<a href="index.html"><img src="yc.png"  /></a>
+				</div>
+				<!---- //End-logo---->
+				<!----start-top-nav---->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">首页</a></li>
+						<li class="page-scroll"><a href="#fea" class="scroll">作品</a></li>
+						<li class="page-scroll"><a href="#blog" class="scroll">社交媒体</a></li>
+						<li class="page-scroll"><a href="#test" class="scroll">人才招聘</a></li>
+						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">联系方式</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
+				<div class="slide-text text-center">
+					<h1>让我们的色彩为世间增添欢笑</h1>
+					<span>Built with colors.</span>
+					<a class="slide-btn" href="#">了解更多</a>
+				</div>
+				<!----//End-top-nav---->
+			</div>
+		</div>
+		<!----//End-header---->
+		<!----start-feartures----->
+		<div id="fea" class="features">
+			<div class="container">
+				<div class="head text-center">
+					<h3><span> </span> 我们的作品</h3>
+					<p>公司自2004年成立以来，制作了多部动画作品，旗下有《喜羊羊与灰太狼》《嫁人就嫁灰太狼》《欢乐大联盟》《宝贝女儿好妈妈》《宋代足球小将》等。 </p>
+				</div>
+				<!---- start-features-grids---->
+				<div class="features-grids text-center">
+					<div class="col-md-3 features-grid">
+						<img src="xh.png"width="260" height="100"> </i> </span>
+						<h3><a href="#">《喜羊羊与灰太狼》</a></h3>
+						<p>享誉国内外的动画作品，本公司代表作，制作时间已经有15年。</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<img src="qise.jpg"width="260" height="100"> </i> </span>
+						<h3><a href="#">《七色战记》</a></h3>
+						<p>2009年推出的作品，融入了以彩虹的七种颜色为背景的七个国家，及精致可爱的画风都是这部作品的亮点。</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<img src="hl.jpg"width="260" height="100"> </i> </span>
+						<h3><a href="#">《欢乐大联盟》</a></h3>
+						<p>本公司最新系列作品，讲述了一对损友闪电鹿与霹雳鼠和他们一帮拥有奇特功能的朋友们之间发生的神奇趣事。</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<img src="zq.jpg"width="260" height="100"> </i> </span>
+						<h3><a href="#">《宋代足球小将》</a></h3>
+						<p>根据电视剧《一脚定江山》历时五年改编创作的国内首部古代足球动画长片，2010年推出。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!---- //End-features-grids---->
+			</div>
+		</div>
+		<!----//End-feartures----->
+		<!---- start-work---->
+		<div class="work">
+			<div class="container">
+				<div class="head text-center work-head">
+					<h3><span> </span> 公司阶段发展</h3>
+					<p>本公司自2004年10月21日成立以来，经历了很多挑战，依靠每位员工对动画事业的热爱和坚持，才有了今天的成就。 </p>
+				</div>
+				<!---- start-work-grids----->
+				<div class="work-grids">
+					<div class="col-md-4 work-grid">
+						<span class="col-md-5 w-icon"> <i class="fa fa-search"> </i></span>
+						<div class="col-md-7 work-info">
+							<h4>公司成立</h4>
+							<p>2004年公司于中国广州成立，起初公司仅有不到10人，这一年公司制作了第一部动画作品《宝贝女儿好妈妈》。</p>
+						</div>
+					</div>
+					<div class="col-md-4 work-grid center-work-grid">
+						<span class="col-md-5 w-icon"> <i class="fa fa-cogs"> </i></span>
+						<div class="col-md-7 work-info">
+							<h4>攀升时期</h4>
+							<p>2005年推出代表作《喜羊羊与灰太狼》，大受欢迎，公司员工数量很快超过100人。2010年推出作品《宋代足球小将》。 </p>
+						</div>
+					</div>
+					<div class="col-md-4 work-grid">
+						<span class="col-md-5 w-icon"><i class="fa fa-code"> </i> </span>
+						<div class="col-md-7 work-info">
+							<h4>重大转折</h4>
+							<p>2013年奥飞娱乐公司全资收购本公司，公司的制作环境大为改善，制作的作品质量逐年提高。 </p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="work-map">
+						<span> </span>
+					</div>
+				</div>
+				<!---- //End-work-grids----->
+			</div>
+		</div>
+		<!---- //End-work---->
+		<!----start-portfolio----->
+		
+		</div>
+		<div class="clearfix"> </div>
+		<!----//End-portfolio----->
+		<div class="tlinks">Collect from <a href="http://www.baisheng999.com/" ></a></div>
+		<!----start-blog---->
+		<div id="blog" class="blog">
+			<div class="container">
+				<div class="head text-center">
+					<h3><span> </span> 社交媒体</h3>
+					<p>我们一直高度重视与粉丝的互动，在多个社交媒体平台均开设了账号，加强与粉丝的互动。 </p>
+				</div>
+			</div>
+			<!---- start-blog-time-line---->
+			<div class="blog-time-line">
+				<div class="col-md-6 blog-time-line-left">
+				</div>
+				<div class="col-md-6 blog-time-line-right">
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span><label>微博</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							
+							<h4 class="post-head"><a href="https://www.weibo.com/goatnwolf?refer_flag=1005055013_">@喜羊羊与灰太狼CPE</a></h4>
+							<p>新浪微博官方账号，第一时间发布《喜羊羊与灰太狼》最新资讯，粉丝数量超过36万。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span><label>B站</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							
+							<h4 class="post-head"><a href="https://space.bilibili.com/31832612">@灰太狼办公室 </a></h4>
+							<p>本公司重要的宣传渠道，拉近与大龄观众的距离，粉丝数量已超过70万。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span><label>抖音</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							
+							<h4 class="post-head"><a href="#">@喜羊羊与灰太狼 </a></h4>
+							<p>最成功的社交媒体账号，影响力极高，顺应时代潮流，粉丝数量高达680万。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span><label>YouTube</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							
+							<h4 class="post-head"><a href="https://www.youtube.com/c/%E5%96%9C%E7%BE%8A%E7%BE%8A%E8%88%87%E7%81%B0%E5%A4%AA%E7%8B%BC%E5%8B%95%E7%95%AB%E5%AE%98%E6%96%B9%E4%B8%AD%E6%96%87%E9%A0%BB%E9%81%93/featured">@喜羊羊與灰太狼動畫-官方中文頻道</a></h4>
+							<p>重要的国际宣传渠道，用于扩大《喜羊羊与灰太狼》在国际上的影响力，超过16万人订阅。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post-time-line-connector">
+						<span> </span>
+					</div>
+					<div class="more-blog-post-time-line-connector">
+						<a href="#"><span>更多</span></a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!---- //End-blog-time-line---->
+		</div>
+		<!----//End-blog---->
+		<!----start-test-monials---->
+		<div  id="test" class="testmonials">
+			<div class="container">
+				<div class="head text-center">
+						<h3><span> </span> 人才招聘</h3>
+						<p>我们一直欢迎热爱动画行业的人才加入我们。 </p>
+				</div>
+			<!----start-testmonial-time-line---->
+			<div class="test-monial-time-line">
+				<div class="col-md-6 test-monial-time-line-left">
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-l1">
+						<div class="col-md-9 test-monial-time-line-left-text">
+							<p>酷爱动画，熟悉动画表现手法，有丰富的想象力和创造力，富有童真；
+
+								具备扎实的文字功底和动漫镜头语言，熟练的编剧技巧，能够独立完成剧本创作；
+								
+								擅长故事编写及文字分镜脚本创作；
+								
+								有较强的创新能力、分析能力，思维活跃；
+								
+								有动漫项目文案或插画角本创作能力；
+								
+	影视鉴赏能力高，对角色、人物、场景、情节结构有良好的见解。</p>
+						</div>
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							
+							<a href="#">编剧</a>
+						</div>
+						<span class="grid-point"> </span>
+					</div>
+				</div>
+				<div class="col-md-6 test-monial-time-line-right">
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-r1">
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							
+							<a href="#">二维动画师</a>
+						</div>
+						<div class="col-md-9 test-monial-time-line-left-text">
+							<p>具有良好的手绘和设计能力，有一定美术基础;2、熟练掌握Flash、Photoshop软件;
+
+								能分析剧本，基本掌握镜头运用,
+								
+								有创意;
+								
+								熟悉动画制作流程，能做出符合项目风格且符合剧情的设计;
+								
+								善于沟通，敢于分享自己的想法与创意;
+								
+								具有生活常识，对动作规律、自然规律要有基本掌握;
+								
+								热爱动漫事业，有高度的责任心。
+								</p>
+						</div>
+						<span class="grid-point grid-point1"> </span>
+					</div>
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-r2">
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							
+							<a href="#">美术设计师</a>
+						</div>
+						<div class="col-md-9 test-monial-time-line-left-text">
+							<p>学历不限，专业不限。只要你热衷于动漫事业；
+
+								对造型、透视和色彩感觉良好，绘画能力强；
+								
+								熟练运用PS，Sai等设计软件及掌握Flash基本操作；
+								
+								能适应各种风格绘制的能力；
+								
+								开阔的创意思维，善于表达、沟通，有团队合作精神；
+								
+								擅长色彩搭配、角色设计及背景设计其中一项或以上者优先考虑。</p>
+						</div>
+						<span class="grid-point grid-point1"> </span>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="test-monial-timeline-connector">
+					<span> </span>
+				</div>
+				<div class="clearfix"> </div>
+				<a class="more-testmonial-time-line" href="#"> <span>更多</span></a>
+			</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+			<!----//End-testmonial-time-line---->
+			<!----start-contact---->
+				<div id="contact" class="contact"> 
+					<div class="contact-map">
+						<iframe src="https://maps.google.com/maps?t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;q=United+States&amp;ie=UTF8&amp;hq=&amp;hnear=United+States&amp;z=11&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;q=United+States&amp;ie=UTF8&amp;hq=&amp;hnear=United+States&amp;ll=37.359243,-91.525727&amp;spn=0.409036,0.837021&amp;z=11&amp;source=embed"> </a></small>
+					</div>
+						<div class="contact-grids">
+							<div class="col-md-6 contact-left">
+								<h3><span> </span> 联系我们</h3>
+								<p><i class="fa fa-map-marker"> </i> 中国广东省广州市越秀区太和岗路20号创意园1号楼4楼</p>
+								<form>
+									<input type="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '姓名';}">
+									<input type="text" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '邮箱';}">
+									<textarea onfocus="if(this.value == '邮箱') this.value='';" onblur="if(this.value == '') this.value='Message *;"></textarea>
+									<p class="conditions"> <label><span>*</span>
+									<span class="submit-btn"><input type="submit" value="发送"></span>
+								</form>
+							</div>
+							<div class="col-md-6 contact-right">
+								<span class="pin-map"> </span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+				</div>
+			<!----//End-contact---->
+		<!----start-footer---->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-left"></div>
+					
+				</div>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+			
+		</div>
+		<!----//End-footer---->
+		<!----//End-container---->
+
+</body>
+</html>
